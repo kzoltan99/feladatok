@@ -396,14 +396,10 @@ try {
     st.define_name("pi", 3.1415926535, true);       // hardcoded constants
     st.define_name("e", 2.7182818284, true);      
 
-    cout << "Simple Calculator Manual\n"
-         << "========================\n"
-         << "This calculator program supports +, -, *, and / operations\n"
+    cout << "This calculator program supports +, -, *, and / operations\n"
          << "Enter any form of compound statement followed by ';' for result\n"
-         << "- ex: 4 + 1; (5-2)/{6*(8+14)}\n"
          << "The modulo operator % may be used on all numbers\n"
          << "An '!' placed after a value will calculate the factorial of it\n"
-         << "- ex: 4! = 4 * 3 * 2 * 1\n"
          << "Square root and exponentiation are provided by 'sqrt' and 'pow'\n"
          << "- ex: sqrt(25) = 5, pow(5,2) = 25\n"
          << "Variable assignment is provided using the 'let' keyword:\n"
