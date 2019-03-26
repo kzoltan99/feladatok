@@ -1,0 +1,9 @@
+A Mandelbrot halmazt Benoit Mandelbrot találta meg a komplex számsíkon. Komplex számok azok a számok, amelyekkel válaszolni tudunk egyébként értelmezhetetlen kérdésekre.
+A Mandelbrot halmaz egy sík origójú, 4 oldalúhosszú négyzetbe helyezett rács. A rács pontjait pedig komplex számoknak feleltetjük meg. A rács minden pontját megvizsgáljuk a z n+1 =z n 2 +c, (0<=n) képlettel. C a vizsgált rácspont. A z0 pedig az origó.
+• z 0 = 0
+• z 1 = 0 2 +c = c
+• z 2 = c 2 +c
+• z 3 = (c 2 +c) 2 +c
+• z 4 = ((c 2 +c) 2 +c) 2 +c
+• ...
+Az origóból kiindulva (z 0 ) átlépünk a rács első pontjába a z 1 = c-be, aztán a c-től függően a további z-kbe. Ha így kijutunk a 2 sugarú körből, akkor a vizsgált rácspont nem a Mandelbrot halmaz eleme. Csak véges sok z-t nézünk meg minden rácsponthoz. Ha nem lép ki akkor feketére színezzük, ezzel jelezve ,hogy az a c rácspont a halmaz része.
