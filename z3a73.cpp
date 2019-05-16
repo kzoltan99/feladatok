@@ -91,10 +91,13 @@ public:
         fa = gyoker;
     }
 
-     ~LZWBinFa () {
-          szabadit ( (*gyoker).egyesGyermek () );
-          szabadit ( (*gyoker).nullasGyermek () );
-     }
+    ~LZWBinFa ()
+    {
+        szabadit (gyoker->egyesGyermek ());
+        szabadit (gyoker->nullasGyermek ());
+        delete(gyoker);
+    }
+
      // 0.0.8, az állatorvosi tesztelésekhez a védéseken
 
      LZWBinFa ( const LZWBinFa & regi ) {
